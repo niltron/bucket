@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "base": "apps/base"
+  }
+}
