@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  bucketdb:
+    image: percona
+    container_name: bucketdb
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: bucket
+      MYSQL_USER: user
+      MYSQL_PASSWORD: bucket
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
